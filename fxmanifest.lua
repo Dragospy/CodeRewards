@@ -12,3 +12,11 @@ client_scripts{
 server_scripts{
     "server/*.lua"
 }
+
+ui_page 'UI/main.html'
+
+files {
+    'UI/main.html',
+    'UI/main.css',
+    'UI/main.js',
+}
