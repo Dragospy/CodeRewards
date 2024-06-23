@@ -1,8 +1,10 @@
+
 window.addEventListener('message', function(event) {
     var item = event.data;
     if (item.showUI) {
-        $('.MainPage').show();
+        $('.Main').show();
     } else {
-        $('.MainPage').hide();
+        $('.Main').hide();
     }
 });
+

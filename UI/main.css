@@ -1,30 +1,82 @@
+/* elements */
+
 body {
-    padding: 0px;
-    margin: 0px;
-    width: 100vw;
-    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Jomhuria';font-size: 22px;
+
+    position: absolute;
+    width: 668px;
+    height: 861px;
+    top: 2%;
+    right: 2%;
 }
 
-.MainPage {
-    position: fixed;
-    /* This sets the div to a fixed place*/
-    top: 50%;
-    /*Sets how much it should be down from the top of the screen*/
-    left: 50%;
-    /*Sets how much it should be left from the screen.*/
-    width: 20%;
-    /*Sets the width of the div*/
-    height: 20%;
-    /*Sets the height of the div*/
-    background-color: rgb(168, 66, 66);
-    /*Now this one should be obvious.*/
+button{
+    font-family: 'Jomhuria';font-size: 40px;
+}
+
+::placeholder{
+    font-family: 'Jomhuria';font-size: 40px;
+    color: #000000;
+}
+
+/* Classes */
+
+.Main {
+    display: hidden;
+
+    position: absolute;
+    top: 7.5%;
+    right : 0%;
+    width: 100%;
+    height: 100%;
+
     vertical-align: middle;
-    /*Aligns the text within div to middle*/
     text-align: center;
-    /*Sets the div text to the center*/
+    background: #FFFFFF;
+    border: 5px solid #000000;
 }
 
-.MainText {
-    font-size: 3vw;
-    /*Font size in view points :)*/
+.Selection-Buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button{
+    margin-left: 15px;
+    margin-right: 15px;
+
+    box-sizing: border-box;
+    width: 181px;
+    height: 44px;
+
+    background: #FFFFFF;
+    border: 4px solid #000000;
+}
+
+.Button:hover{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.SearchBar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+/* ID's */
+
+#VehicleSearch{
+    box-sizing: border-box;
+    font-family: 'Jomhuria';font-size: 40px;
+
+    position: absolute;
+    width: 601px;
+    height: 41px;
+
+    background: #FFFFFF;
+    border: 2px solid #000000;
 }

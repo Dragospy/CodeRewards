@@ -2,13 +2,32 @@
 <header>
     <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
     <script src="main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
 </header>
 
 <body>
-    <!---Our content will soon go here!-->
-    <div class="MainPage">
-        <h1 class="MainText">Test</h1>
+    <div class="Main">
+        <div class = "RewardSelection" >
+            <div class="Selection-Header">
+                <h1>WHAT REWARDS WOULD YOU LIKE THE CODE TO INCLUDE</h1>
+            </div>
+            <div class="Selection-Buttons">
+                <button class="Button" id = "VehiclesButton">VEHICLES</button>
+                <button class="Button" id = "MoneyButton">MONEY</button>
+                <button class="Button" id = "ItemsButton">ITEMS</button>
+            </div>
+            <div class = "Selection-Content">
+                <div class = "Vehicles-Section">
+                    <div class = "SearchBar">
+                        <input type="text" id="VehicleSearch" placeholder="SEARCH FOR VEHICLES...">
+                    </div>
+                    <div class = "SearchResults">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="RewardConfirmation"></div>
     </div>
 </body>
 
