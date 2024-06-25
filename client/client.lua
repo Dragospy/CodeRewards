@@ -7,6 +7,6 @@ RegisterCommand('Rewards', function()
     else
         SendNUIMessage({showUI = false;})
     end
-end)
+end, false)
 
 RegisterKeyMapping('Rewards', 'Opens/Closes UI', 'keyboard', 'L')

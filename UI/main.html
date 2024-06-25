@@ -1,6 +1,7 @@
 <html>
 <header>
-    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+   <!-- <script src="nui://game/ui/jquery.js" type="text/javascript"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Jomhuria' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
@@ -8,9 +9,10 @@
 
 <body>
     <div class="Main">
+        <button class="ExitButton">&#10006;</button>
         <div class = "RewardSelection" >
             <div class="Selection-Header">
-                <h1>WHAT REWARDS WOULD YOU LIKE THE CODE TO INCLUDE</h1>
+                <p>WHAT REWARDS WOULD YOU LIKE THE CODE TO INCLUDE</p>
             </div>
             <div class="Selection-Buttons">
                 <button class="Button" id = "VehiclesButton">VEHICLES</button>
@@ -24,10 +26,48 @@
                     </div>
                     <div class = "SearchResults">
                     </div>
+                    <div class="Vehicle-Buttons">
+                        <button class="Button" id = "CancelVehicle">CANCEL</button>
+                        <button class="Button" id = "ConfirmVehicle">CONFIRM</button>
+                    </div>
+                </div>
+                <div class = "Money-Section">
+                    <div class = "MoneyInput">
+                        <p class = "MoneyText">How much money would you like the code to reward the player with?</p>
+                        <input type="text" id="MoneyAmount" placeholder="AMOUNT: EX 1000">
+                    </div>
+                    <div class="Money-Buttons">
+                        <button class="Button" id = "CancelMoney">CANCEL</button>
+                        <button class="Button" id = "ConfirmMoney">CONFIRM</button>
+                    </div>
+                </div>
+                <div class = "Items-Section">
+                    <div class = "SearchBar">
+                        <input type="text" id="ItemSearch" placeholder="SEARCH FOR ITEMS...">
+                    </div>
+                    <div class = "SearchResults">
+                    </div>
+                    <div class="Item-Buttons">
+                        <button class="Button" id = "CancelItem">CANCEL</button>
+                        <button class="Button" id = "ConfirmItem">CONFIRM</button>
+                    </div>
                 </div>
             </div>
+            <div>
+                <button class="SummaryButton" id = "Summary">CONFIRM REWARDS</button>
+            </div>
         </div>
-        <div class="RewardConfirmation"></div>
+        <div class="RewardConfirmation">
+            <div class="Confirmation-Header">
+                <p>CODE CONTENT SUMMARY</p>
+            </div>
+            <div class="SummaryContent">
+            </div>
+                <div class="Summary-Buttons">
+                    <button class="Button" id = "EditButton">EDIT</button>
+                    <button class="Button" id = "GenerateButton">GENERATE CODE</button>
+                </div>
+        </div>
     </div>
 </body>
 

@@ -1,8 +1,9 @@
-/* elements */
+/* Elements */
 
 body {
     box-sizing: border-box;
-    font-family: 'Jomhuria';font-size: 22px;
+    font-family: 'Jomhuria';font-size: 40px;
+    font-weight:normal;
 
     position: absolute;
     width: 668px;
@@ -23,7 +24,7 @@ button{
 /* Classes */
 
 .Main {
-    display: hidden;
+    display: block;
 
     position: absolute;
     top: 7.5%;
@@ -35,6 +36,22 @@ button{
     text-align: center;
     background: #FFFFFF;
     border: 5px solid #000000;
+}
+
+.RewardConfirmation{
+    display: none;
+}
+
+.Vehicles-Section{
+    display: none;
+}
+
+.Money-Section{
+    display: block;
+}
+
+.Items-Section{
+    display: none;
 }
 
 .Selection-Buttons{
@@ -61,22 +78,116 @@ button{
 }
 
 .SearchBar{
-    display:flex;
     justify-content: center;
     align-items: center;
     margin: 40px;
 }
 
-/* ID's */
+.MoneyInput{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 170px;
+    width: 351px;
+    height: 50px;
+}
 
-#VehicleSearch{
+.MoneyInput input{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.Money-Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 18%;
+    bottom: 35%;
+}
+
+.Vehicle-Buttons, .Item-Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 18%;
+    bottom: 15%;
+}
+
+.ExitButton{
+    box-sizing: border-box;
+    font-size:22px;
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1%;
+    top: 1%;
+
+    background: #FFFFFF;
+    border: 4px solid #000000;
+}
+
+.ExitButton:hover{
+    background: #ff0000;
+    color: #000000;
+}
+
+.SummaryButton{
     box-sizing: border-box;
     font-family: 'Jomhuria';font-size: 40px;
 
     position: absolute;
+    width: 427px;
+    height: 44px;
+    left: 18%;
+    bottom: 5%;
+
+    background: #FFFFFF;
+    border: 4px solid #000000;
+}
+
+.SummaryButton:hover{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.Summary-Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: absolute;
+    left: 18%;
+    bottom: 10%;
+}
+
+
+/* ID's */
+
+#VehicleSearch, #ItemSearch{
+    box-sizing: border-box;
+    font-family: 'Jomhuria';font-size: 40px;
+
+    --position: absolute;
     width: 601px;
     height: 41px;
 
     background: #FFFFFF;
     border: 2px solid #000000;
 }
+
+#MoneyAmount {
+    box-sizing: border-box;
+    font-family: 'Jomhuria';font-size: 40px;
+
+    width: 326px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 2px solid #000000;
+}
+
