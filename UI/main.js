@@ -1,10 +1,8 @@
 
 window.addEventListener('message', function(event) {
     var item = event.data;
-    if (item.showUI) {
+    if (item.type === "ShowUI") {
         $('.Main').show();
-    } else {
-        $('.Main').hide();
     }
 });
 
@@ -29,4 +27,13 @@ $(document).on('click', '#ItemsButton', function() {
 $(document).on('click', '#Summary', function() {
     $('.RewardSelection').hide();
     $('.RewardConfirmation').show();
+});
+
+$(document).on('click', '.ExitButton', function() {
+    $.post(`https://${GetParentResourceName()}/CloseUI`, JSON.stringify({
+        exit: true
+    }));
+    $('.RewardSelection').show();
+    $('.RewardConfirmation').hide();
+    $('.Main').hide();
 });

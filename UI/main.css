@@ -24,7 +24,7 @@ button{
 /* Classes */
 
 .Main {
-    display: block;
+    display: none;
 
     position: absolute;
     top: 7.5%;
@@ -43,11 +43,11 @@ button{
 }
 
 .Vehicles-Section{
-    display: none;
+    display: block;
 }
 
 .Money-Section{
-    display: block;
+    display: none;
 }
 
 .Items-Section{
