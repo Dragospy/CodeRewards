@@ -24,7 +24,8 @@
                     <div class = "SearchBar">
                         <input type="text" id="VehicleSearch" placeholder="SEARCH FOR VEHICLES...">
                     </div>
-                    <div class = "SearchResults">
+                    <div class = "SearchResults-Vehicles">
+                        <table class="table"></table>
                     </div>
                     <div class="Vehicle-Buttons">
                         <button class="Button" id = "CancelVehicle">CANCEL</button>
@@ -45,7 +46,8 @@
                     <div class = "SearchBar">
                         <input type="text" id="ItemSearch" placeholder="SEARCH FOR ITEMS...">
                     </div>
-                    <div class = "SearchResults">
+                    <div class = "SearchResults-Items">
+                        <table class="table"></table>
                     </div>
                     <div class="Item-Buttons">
                         <button class="Button" id = "CancelItem">CANCEL</button>
@@ -62,11 +64,23 @@
                 <p>CODE CONTENT SUMMARY</p>
             </div>
             <div class="SummaryContent">
-            </div>
-                <div class="Summary-Buttons">
-                    <button class="Button" id = "EditButton">EDIT</button>
-                    <button class="Button" id = "GenerateButton">GENERATE CODE</button>
+                <div class ="Vehicle-Table">
+                    <p class = "table-paragraph">Vehicles the code includes:</p>
+                    <table class="table"></table>
                 </div>
+                <div class ="Money-Table">
+                    <p class = "table-paragraph">Money the code includes:</p>
+                    <table class="table"></table>
+                </div>
+                <div class ="Item-Table">
+                    <p class = "table-paragraph">Items the code includes:</p>
+                    <table class="table"></table>
+                </div>
+            </div>
+            <div class="Summary-Buttons">
+                <button class="Button" id = "EditButton">EDIT</button>
+                <button class="Button" id = "GenerateButton">GENERATE CODE</button>
+            </div>
         </div>
     </div>
 </body>

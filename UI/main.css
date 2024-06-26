@@ -81,6 +81,7 @@ button{
     justify-content: center;
     align-items: center;
     margin: 40px;
+    margin-bottom: 10px;
 }
 
 .MoneyInput{
@@ -163,6 +164,35 @@ button{
     position: absolute;
     left: 18%;
     bottom: 10%;
+}
+
+.SummaryContent, .table{
+    display: flex;
+    flex-direction: column;
+}
+.table-paragraph{
+    text-align: left;
+    margin:10px;
+}
+
+.table-row, .table-row-item, .table-row-veh{
+    /* Rectangle 16 */
+
+    box-sizing: border-box;
+
+    position: relative;
+    max-width: 277px;
+    max-height: 44px;
+    margin: 15px;
+
+    background: #FFFFFF;
+    border: 4px solid #000000;
+
+
+}
+
+.table-element{
+    font-family: 'Jomhuria';font-size: 30px;
 }
 
 
