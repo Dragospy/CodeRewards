@@ -4,7 +4,6 @@ body {
     box-sizing: border-box;
     font-family: 'Jomhuria';font-size: 40px;
     font-weight:normal;
-
     position: absolute;
     width: 668px;
     height: 861px;
@@ -18,7 +17,16 @@ button{
 
 ::placeholder{
     font-family: 'Jomhuria';font-size: 40px;
-    color: #000000;
+    color: #ffffff;
+}
+
+input, textarea{
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+p{
+    color: #FFFFFF;
 }
 
 /* Classes */
@@ -26,16 +34,29 @@ button{
 .Main {
     display: none;
 
-    position: absolute;
     top: 7.5%;
     right : 0%;
     width: 100%;
     height: 100%;
-
-    vertical-align: middle;
     text-align: center;
-    background: #FFFFFF;
-    border: 5px solid #000000;
+    position: absolute;
+
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 79px;
+
+}
+
+
+
+.MainText{
+    width: 287px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .RewardConfirmation{
@@ -54,33 +75,88 @@ button{
     display: none;
 }
 
+.Selection-Header{
+    display: flex;
+    flex-direction:  column;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 100px;
+    top: 2%;
+    right: 40%;
+}
+
+.Selection-Content{
+    display: flex;
+    flex-direction:  column;
+    box-sizing: border-box;
+
+    right: 5%;
+    top: 12%;
+
+    position: absolute;
+    width: 411px;
+    height: 669px;
+
+}
+
 .Selection-Buttons{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction:  column;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 211px;
+    height: 861px;
+
+    background: #000000;
+    border-right: 4px solid #FFFFFF;
+    border-radius: 77px 0px 0px 77px;
+
+}
+
+.SearchButton{
+    margin-left: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    box-sizing: border-box;
+
+    width: 144px;
+    height: 44px;
+    
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 53px;
 }
 
 .Button{
+    margin-top: 100px;
     margin-left: 15px;
     margin-right: 15px;
 
     box-sizing: border-box;
+
     width: 181px;
     height: 44px;
-
-    background: #FFFFFF;
-    border: 4px solid #000000;
+    
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 53px;
 }
 
-.Button:hover{
-    background: #000000;
-    color: #FFFFFF;
+.Button:hover, .SearchButton:hover{
+    background: #ffffff;
+    color: #000000;
 }
 
 .SearchBar{
+    display:flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 35px;
     margin-bottom: 10px;
 }
 
@@ -89,7 +165,7 @@ button{
     align-items: center;
     text-align: left;
     margin-top: 150px;
-    margin-left: 170px;
+    margin-left: 50px;
     width: 351px;
     height: 50px;
 }
@@ -105,7 +181,7 @@ button{
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 18%;
+    left: 0%;
     bottom: 35%;
 }
 
@@ -121,15 +197,19 @@ button{
 .ExitButton{
     box-sizing: border-box;
     font-size:22px;
-
+    z-index: 1;
     position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 1%;
-    top: 1%;
+    width: 80px;
+    height: 74px;
+    top: 0%;
+    left: 0%;
 
-    background: #FFFFFF;
-    border: 4px solid #000000;
+    background: #000000;
+    color: #FFFFFF;
+    border-right: 4px solid #FFFFFF;
+    border-bottom: 4px solid #FFFFFF;
+    border-radius: 100px 0px 0px 0px;
+
 }
 
 .ExitButton:hover{
@@ -142,18 +222,22 @@ button{
     font-family: 'Jomhuria';font-size: 40px;
 
     position: absolute;
-    width: 427px;
+    width: 411px;
     height: 44px;
-    left: 18%;
-    bottom: 5%;
 
-    background: #FFFFFF;
-    border: 4px solid #000000;
+    right: 5%;
+    bottom: 4%;
+
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 53px;
+
 }
 
 .SummaryButton:hover{
-    background: #000000;
-    color: #FFFFFF;
+    background: #ffffff;
+    color: #000000;
 }
 
 .Summary-Buttons{
@@ -163,16 +247,44 @@ button{
     margin-top: 50px;
     position: absolute;
     left: 18%;
-    bottom: 10%;
+    bottom: 4%;
 }
 
-.SummaryContent, .table{
+.SummaryContent{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 411px;
+    height: 669px;
+
+    right: 40%;
+    top: 7%;
 }
+
 .table-paragraph{
-    text-align: left;
+    box-sizing: border-box;
+
+    width: 668px;
+    height: 34px;
+    
+    background: #000000;
+    border-width: 4px 0px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 0px;
+
+    text-align: center;
+    
     margin:10px;
+    padding-bottom: 20px;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
 }
 
 .table-row, .table-row-item, .table-row-veh{
@@ -181,14 +293,34 @@ button{
     box-sizing: border-box;
 
     position: relative;
+
     max-width: 277px;
     max-height: 44px;
+    padding-left:20px;
     margin: 15px;
+    
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 53px;
+}
 
-    background: #FFFFFF;
-    border: 4px solid #000000;
+.Confirmation-Header{
 
+    box-sizing: border-box;
 
+    position: absolute;
+    width: 668px;
+    height: 74px;
+
+    background: #000000;
+    border-bottom: 4px solid #FFFFFF;
+    border-radius: 77px 77px 0px 0px;
+
+}
+
+.SummaryText{
+    margin-top: 20px;
 }
 
 .table-element{
@@ -203,12 +335,14 @@ button{
     font-family: 'Jomhuria';font-size: 40px;
 
     --position: absolute;
-    width: 601px;
-    height: 41px;
-
-    background: #FFFFFF;
-    border: 2px solid #000000;
+    width: 273px;
+    height: 44px;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 53px;
 }
+
+
 
 #MoneyAmount {
     box-sizing: border-box;
@@ -217,7 +351,12 @@ button{
     width: 326px;
     height: 50px;
 
-    background: #FFFFFF;
-    border: 2px solid #000000;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 53px;
+}
+
+#VehiclesButton{
+    margin-top: 250px;
 }
 

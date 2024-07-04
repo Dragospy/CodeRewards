@@ -70,6 +70,10 @@ window.addEventListener('message', function(event) {
             }
         });
     }
+
+    if (item.type === "CopyToClipboard"){
+        copyToClipboard(item.string);
+    }
 });
 
 function resetUI(){
@@ -173,8 +177,11 @@ $(document).on('click', '#ConfirmMoney', function() {
     }));
 });
 
-
-
+$(document).on('click', '#GenerateButton', function() {
+    $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({
+        action: "GenerateCode",
+    }));
+});
 
 $(document).on('click', '.ExitButton', function() {
     $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({
@@ -183,3 +190,21 @@ $(document).on('click', '.ExitButton', function() {
     resetUI();
     $('.Main').hide();
 });
+
+$(document).on('click', '#GenerateButton', function() {
+    $.post(`https://${GetParentResourceName()}/action`, JSON.stringify({
+        action: "CloseUI"
+    }));
+    resetUI();
+    $('.Main').hide();
+});
+
+const copyToClipboard = str => {
+    const el = document.createElement('textarea');
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+ };
+
