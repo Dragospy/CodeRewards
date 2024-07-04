@@ -247,35 +247,43 @@ RegisterNUICallback('action', function(data, cb)
         ui = false
     end
 
+
     if data.action == 'AddReward' then
-        local newReward = {}
         if data.rewardType == 'vehicle' then
-            newReward = {
-                id = data.id,
-                rewardType = data.rewardType,
-                name = data.name,
-                model = data.model
-            
-            }
-            rewards[#rewards+1] = newReward
+			if rewards[data.model] == nil then
+				rewards[data.model] = {
+				id = data.id,
+				 rewardType = data.rewardType,
+				 name = data.name,
+				 model = data.model
+			 }
+			else
+				print("Vehicle already added")
+			end
         elseif data.rewardType == 'money' then
-            newReward = {
-                id = data.id,
-                rewardType = data.rewardType,
-                amount = data.amount
-            }
-            rewards[#rewards+1] = newReward
+			if rewards["Money"] == nil then
+				rewards["Money"] = {
+					id = data.id,
+					rewardType = data.rewardType,
+					amount = data.amount
+				}
+			else
+				rewards["Money"].amount = data.amount
+			end
         elseif data.rewardType == 'item' then
-            newReward = {
-                id = data.id,
-                rewardType = data.rewardType,
-                label = data.label,
-                amount = data.amount,
-                name = data.name
-            }
-            rewards[#rewards+1] = newReward
+			if rewards[data.name] == nil then
+				rewards[data.name] = {
+					id = data.id,
+					rewardType = data.rewardType,
+					label = data.label,
+					amount = data.amount,
+					name = data.name
+				}
+			else
+				rewards[data.name].amount = rewards[data.name].amount + data.amount
+			end
         end
-        UpdateRewards()
+		UpdateRewards()
     end
 
     if data.action == "SearchVehicles" then

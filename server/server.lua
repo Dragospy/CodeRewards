@@ -33,7 +33,7 @@ RegisterNetEvent('qb-rewards:server:InsertVehIntoGarage', function(vehicleProps,
 	exports.oxmysql:execute(query,var)
 end)
 
-RegisterCommand('rewards', function(source)
+RegisterCommand(Config.OpenCommand, function(source)
     local src = source
     if QBCore.Functions.HasPermission(src, "god")  or QBCore.Functions.HasPermission(src, "co-god") or QBCore.Functions.HasPermission(src, "dev") or QBCore.Functions.HasPermission(src, "manager") or QBCore.Functions.HasPermission(src, "managerstaff") or QBCore.Functions.HasPermission(src, "sadmin")or QBCore.Functions.HasPermission(src, "admin") or QBCore.Functions.HasPermission(src, "moderator") or QBCore.Functions.HasPermission(src, "helper") or QBCore.Functions.HasPermission(src, "helpert") then
         TriggerClientEvent('qb-rewards:client:OpenUI', source)
@@ -42,7 +42,7 @@ RegisterCommand('rewards', function(source)
     end
 end, false)
 
-RegisterCommand('claim', function(source, code)
+RegisterCommand(Config.ClaimCommand, function(source, code)
     local license = QBCore.Functions.GetIdentifier(source, "license")
     local result = exports.oxmysql:executeSync('SELECT * FROM rewards WHERE code=@input', {
         ['@input'] = code,

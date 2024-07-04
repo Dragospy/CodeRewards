@@ -13,6 +13,8 @@ server_scripts{
     "server/*.lua"
 }
 
+shared_script 'config.lua'
+
 ui_page 'UI/main.html'
 
 files {

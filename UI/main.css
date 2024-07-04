@@ -42,7 +42,7 @@ p{
     position: absolute;
 
     background: rgba(0, 0, 0, 0.85);
-    border-radius: 79px;
+    border-radius: 50px;
 
 }
 
@@ -208,7 +208,7 @@ p{
     color: #FFFFFF;
     border-right: 4px solid #FFFFFF;
     border-bottom: 4px solid #FFFFFF;
-    border-radius: 100px 0px 0px 0px;
+    border-radius: 50px 0px 0px 0px;
 
 }
 

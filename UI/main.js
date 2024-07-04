@@ -151,7 +151,6 @@ $(document).on('click', '.table-row-veh', function() {
         name: VehiclesFound[vehicleID].name,
         model: VehiclesFound[vehicleID].model 
     }));
-    Rewards.push(VehiclesFound[vehicleID]);
 }); 
     
 $(document).on('click', '.table-row-item', function() {
@@ -164,7 +163,6 @@ $(document).on('click', '.table-row-item', function() {
             amount: 1,
             name: ItemsFound[itemID].name,
         }));
-        Rewards.push(ItemsFound[itemID]);
 });
 
 $(document).on('click', '#ConfirmMoney', function() {
