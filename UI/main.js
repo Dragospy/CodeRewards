@@ -10,9 +10,9 @@ window.addEventListener('message', function(event) {
 
     if (item.type === "UpdateRewards") {
         Rewards = item.rewards
-        var VehicleList = $(".Vehicle-Table").find(".table");
-        var MoneyList = $(".Money-Table").find(".table");
-        var ItemList = $(".Item-Table").find(".table");
+        var VehicleList = $(".Vehicle-Table").find(".tableConfirmation");
+        var MoneyList = $(".Money-Table").find(".tableConfirmation");
+        var ItemList = $(".Item-Table").find(".tableConfirmation");
         VehicleList.empty();
         MoneyList.empty();
         ItemList.empty();
@@ -85,9 +85,9 @@ function resetUI(){
     $('#VehicleSearch').val("");
     $('#MoneyAmount').val("");
     $('#ItemSearch').val("");
-    var VehicleList = $(".Vehicle-Table").find(".table");
-    var MoneyList = $(".Money-Table").find(".table");
-    var ItemList = $(".Item-Table").find(".table");
+    var VehicleList = $(".Vehicle-Table").find(".tableConfirmation");
+    var MoneyList = $(".Money-Table").find(".tableConfirmation");
+    var ItemList = $(".Item-Table").find(".tableConfirmation");
     var VehicleTable = $(".SearchResults-Vehicles").find(".table");
     var ItemsTable = $(".SearchResults-Items").find(".table");
     VehicleList.empty();
