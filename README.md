@@ -21,9 +21,16 @@ It allows server owners to create reward codes that can then be claimed by playe
 
 ## Preview ****Redesign is planned, this will make the rewards system have the same design style as my gang system****
 ### Adding vehicles to the code
+- Default Page
+- Filtering
 ### Adding money to the code
+- Default Page
+- Typing amount
 ### Adding items to the code
+- Default Page
+- Filtering
 ### Summary page
+
 ### Claim Code
 
 ## The system currently plans to have the following features:
