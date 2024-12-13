@@ -51,7 +51,7 @@ It allows server owners to create reward codes that can then be claimed by playe
 ![image](https://github.com/user-attachments/assets/756c4137-08d3-493d-9b32-ff526d6a132a)
 
 ### Claim Code
-![image](https://github.com/user-attachments/assets/03d01d34-55c9-4615-b63f-25c4c29433f0)
+![image](https://github.com/user-attachments/assets/ba0d5fd0-f9ad-498e-989f-ca925e205f79)
 
 
 
