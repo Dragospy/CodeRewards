@@ -20,18 +20,40 @@ It allows server owners to create reward codes that can then be claimed by playe
 - Done!
 
 ## Preview ****Redesign is planned, this will make the rewards system have the same design style as my gang system****
+- Hover over X button <br>
+![image](https://github.com/user-attachments/assets/036e50ae-61f1-4bc8-9175-a05a5bd8481e)
+
+- Hover over Section button <br>
+![image](https://github.com/user-attachments/assets/07f4b7e0-906e-4169-a667-2fa7f7ba805e)
+
+- Hover over Confirm Rewards button <br>
+![image](https://github.com/user-attachments/assets/8e011cb2-2191-4dc1-a879-192d3cf8e573)
+
 ### Adding vehicles to the code
-- Default Page
-- Filtering
+- Default Page <br>
+![image](https://github.com/user-attachments/assets/43d250ca-74da-4c43-bf38-70dcd3571202)
+
+- Filtering <br>
+![image](https://github.com/user-attachments/assets/c1dcb5c3-6efa-45da-afbf-774b57a335d7)
+
 ### Adding money to the code
-- Default Page
-- Typing amount
+- Default Page <br>
+![image](https://github.com/user-attachments/assets/0857fc97-72c7-4a70-9b52-59720f8ad405)
+- Typing amount <br>
+![image](https://github.com/user-attachments/assets/f86d667b-1095-400e-a5f9-216f0b834336)
 ### Adding items to the code
-- Default Page
-- Filtering
+- Default Page <br>
+![image](https://github.com/user-attachments/assets/383c63e5-da0e-4729-921a-f3da7817d41b)
+- Filtering <br>
+![image](https://github.com/user-attachments/assets/e2d45452-befb-4386-a356-810cb10519f0)
+
 ### Summary page
+![image](https://github.com/user-attachments/assets/756c4137-08d3-493d-9b32-ff526d6a132a)
 
 ### Claim Code
+![image](https://github.com/user-attachments/assets/03d01d34-55c9-4615-b63f-25c4c29433f0)
+
+
 
 ## The system currently plans to have the following features:
  ### Already implemented features:
